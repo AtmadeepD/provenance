@@ -63,6 +63,18 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.8 — Share card and ship
+- Implemented `api/og/route.tsx` using `next/og` for dynamic 1200x630 OG image generation rendering the airline's dynamic fate strip and tokens.
+- Wired `/airlines/[slug]` to output OpenGraph and Twitter metadata linking to the OG image endpoint.
+- Added `robots.ts` and `sitemap.ts` to surface the root and airline pages while restricting `/kitchen`.
+- Executed Lighthouse pass.
+- PHASE 0 COMPLETE.
+- Total Airframes: 68
+- Confidence Breakdown: 10 verified, 11 partial, 47 sketchy.
+- Live URL: `http://localhost:3000/airlines/kingfisher`
+- Phase 1 Next Task: Add MapLibre two-pane interactive map.
+
+
 ### 2026-08-25 · Session 0.7 — The diaspora page (revised)
 - Created the interactive diaspora list component `DiasporaClient` supporting client-side filtering and sorting.
 - Implemented Section Eyebrows grouping the list into mainline, turboprops, inherited, and widebody based on registration prefixes.
