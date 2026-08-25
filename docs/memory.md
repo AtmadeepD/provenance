@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.1 — Scaffold
+- Next.js 15, Tailwind v4, and fonts (Newsreader, Inter, IBM Plex Mono) set up.
+- Directory skeleton initialized with .gitignore.
+- Home page set to PROVENANCE static title.
+- Next: Vercel deploy, then begin `pipeline/curated/airlines/kingfisher.yaml`.
+
 ### 2026-08-25 · Session 0 — project defined
 - Doc pack created: PRD, architecture, design, phases, rules, memory.
 - Project named PROVENANCE. Phase 0 scope locked: Kingfisher diaspora page,
