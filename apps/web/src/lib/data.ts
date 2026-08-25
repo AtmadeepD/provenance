@@ -19,3 +19,13 @@ export async function getAirline(slug: string): Promise<AirlineData | null> {
     return null;
   }
 }
+
+export async function getAllAirlineSlugs(): Promise<string[]> {
+  const dir = path.join(process.cwd(), '../../data/build/airlines');
+  try {
+    const files = await fs.readdir(dir);
+    return files.filter(f => f.endsWith('.json')).map(f => f.replace('.json', ''));
+  } catch (e) {
+    return [];
+  }
+}

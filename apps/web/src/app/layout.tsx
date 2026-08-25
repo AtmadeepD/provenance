@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Newsreader, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteNav } from "@/components/SiteNav";
-import { SiteFooter } from "@/components/SiteFooter";
 
 const newsreader = Newsreader({
   variable: "--font-display",
@@ -40,7 +39,6 @@ export default function RootLayout({
         <div className="flex-1 flex flex-col">
           {children}
         </div>
-        <SiteFooter date="2026-08-25" />
       </body>
     </html>
   );

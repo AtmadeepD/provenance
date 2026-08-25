@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.6 — The mini-lifeline
+- Created the static `MiniLifeline` component (240x36 pure SVG, using `d3-scale`).
+- Implemented all fate terminal symbols (active, stored, scrapped, preserved, unknown) and correctly mapped `--fate-writtenoff`.
+- Handled edge cases explicitly, rendering a single muted bar when dates are unknown, and omitting fate color for unknown states.
+- Showcased all variants in the `/_kitchen` route.
+
 ### 2026-08-25 · Session 0.5b — Roster converter
 - Wrote `pipeline/emit/roster-to-yaml.mjs` to convert the `kingfisher-roster.psv` data into schema-valid YAML entries.
 - Fixed JSON Schema `identities` rule to make the `country` field optional to accommodate post-Kingfisher partial identities.

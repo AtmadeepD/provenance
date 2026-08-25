@@ -1,6 +1,6 @@
 import React from 'react';
 
-export type FateStatus = 'active' | 'stored' | 'scrapped' | 'preserved' | 'written_off' | 'unknown';
+export type FateStatus = 'active' | 'stored' | 'withdrawn' | 'scrapped' | 'preserved' | 'written_off' | 'unknown';
 
 interface FateChipProps {
   status: FateStatus;
@@ -9,9 +9,10 @@ interface FateChipProps {
 const statusMap: Record<FateStatus, { label: string; colorClass: string; borderColorClass: string }> = {
   active: { label: 'FLYING', colorClass: 'text-fate-active', borderColorClass: 'border-fate-active' },
   stored: { label: 'STORED', colorClass: 'text-fate-stored', borderColorClass: 'border-fate-stored' },
+  withdrawn: { label: 'STORED', colorClass: 'text-fate-stored', borderColorClass: 'border-fate-stored' },
   scrapped: { label: 'SCRAPPED', colorClass: 'text-fate-scrapped', borderColorClass: 'border-fate-scrapped' },
   preserved: { label: 'PRESERVED', colorClass: 'text-fate-preserved', borderColorClass: 'border-fate-preserved' },
-  written_off: { label: 'LOST', colorClass: 'text-fate-scrapped', borderColorClass: 'border-fate-scrapped' },
+  written_off: { label: 'LOST', colorClass: 'text-fate-writtenoff', borderColorClass: 'border-fate-writtenoff' },
   unknown: { label: 'UNKNOWN', colorClass: 'text-fate-unknown', borderColorClass: 'border-fate-unknown' },
 };
 
