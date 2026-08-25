@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build:data": "node ../../pipeline/emit/build.mjs",
-    "build": "pnpm run build:data && next build",
+    "build": "npm run build:data && next build",
     "start": "next start",
     "lint": "eslint"
   },
