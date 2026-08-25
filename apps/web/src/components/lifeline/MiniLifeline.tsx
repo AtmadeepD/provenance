@@ -116,6 +116,13 @@ export function MiniLifeline({ eras, identities, status, from, to, liveryFallbac
         <rect x="0" y={BAR_Y} width={PLOT_W} height={BAR_H} fill="var(--color-rule-strong)" />
       ) : (
         <>
+          {(() => {
+             const firstEra = eras[0];
+             const firstX = scale!(parseDate(firstEra.from) || minDate!);
+             return (
+               <rect x={firstX} y={BAR_Y + BAR_H/2 - 1} width={PLOT_W - firstX} height={2} fill="var(--color-rule-strong)" />
+             );
+          })()}
           {eras.map((era, i) => {
             const startX = scale!(parseDate(era.from) || minDate!);
             const toDate = parseDate(era.to);

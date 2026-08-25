@@ -18,7 +18,7 @@ airframes:
     status:
       state: active
       as_of: 2026-08-25
-      note: operating with Hi Fly Malta
+      note: flying as 9H-HFK with Hi Fly Malta
     events: []
     identities:
       - reg: VT-VJK
@@ -129,22 +129,24 @@ airframes:
       as_of: 2026-08-25
       place:
         name: Teruel, Spain
-      note: withdrawn Feb 2022; moved Brussels to Teruel 9 May 2022
+      note: stored at Teruel since 9 May 2022; physically sighted 13 Jul 2025
     events: []
     identities:
       - reg: VT-VJP
         country: IN
         from: 2008-08
-        to: "2012"
+        to: 2012-02
+      - reg: D-ANJB
       - reg: VN-A383
       - reg: EI-GCU
     eras:
       - operator_id: kingfisher
         role: passenger
         from: 2008-08
-        to: "2012"
+        to: 2012-02
     sources:
       - ref: https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/
+      - ref: https://www.jetphotos.com/registration/VT-VJP
     confidence:
       identity: verified
       status: verified
@@ -181,13 +183,13 @@ airframes:
       - reg: VT-KFA
         country: IN
         from: 2005-04
-        to: "2012"
+        to: 2012-10
       - reg: VP-BHW
     eras:
       - operator_id: kingfisher
         role: passenger
         from: 2005-04
-        to: "2012"
+        to: 2012-10
     sources:
       - ref: https://www.jetphotos.com/info/A32X-2413
       - ref: https://www.pictaero.com/en/search/search?a4=VT-KFA
@@ -208,16 +210,16 @@ airframes:
     identities:
       - reg: VT-KFB
         country: IN
-        from: "2005"
-        to: "2012"
+        from: 2005-05
+        to: 2012-10
       - reg: OE-ICG
       - reg: XA-VAF
       - reg: VT-IHS
     eras:
       - operator_id: kingfisher
         role: passenger
-        from: "2005"
-        to: "2012"
+        from: 2005-05
+        to: 2012-10
     sources:
       - ref: https://www.airfleets.fr/ficheapp/plane-a320-2443.htm
       - ref: https://xfw-spotter.blogspot.com/2005/05/a320-232-kingfisher-airlines-f-wwbr-vt.html
@@ -231,13 +233,13 @@ airframes:
     status:
       state: active
       as_of: 2026-08-25
-      note: Smartwings / Global Aviation; 21st year in service
+      note: Smartwings / Global Aviation
     events: []
     identities:
       - reg: VT-KFC
         country: IN
         from: 2005-07
-        to: "2012"
+        to: 2012-08
       - reg: EI-EWO
       - reg: AP-BMC
       - reg: YR-DSI
@@ -247,10 +249,10 @@ airframes:
       - operator_id: kingfisher
         role: passenger
         from: 2005-07
-        to: "2012"
+        to: 2012-08
     sources:
       - ref: https://www.jetphotos.com/info/A32X-2496
-      - ref: https://xfw-spotter.blogspot.com/2005/07/a320-232-kingfisher-airlines-f-wwif-vt.html
+      - ref: https://www.aerotransport.org/php/archives.php?m=200507
     confidence:
       identity: verified
       status: verified
@@ -314,15 +316,15 @@ airframes:
     identities:
       - reg: VT-KFF
         country: IN
-        from: "2005"
-        to: "2012"
+        from: 2005-09
+        to: 2012-10
       - reg: HS-PPD
       - reg: LY-WSM
     eras:
       - operator_id: kingfisher
         role: passenger
-        from: "2005"
-        to: "2012"
+        from: 2005-09
+        to: 2012-10
     sources:
       - ref: https://www.jetphotos.com/info/A32X-2531
       - ref: https://commons.wikimedia.org/wiki/Category:VT-KFF_(aircraft)
@@ -343,14 +345,16 @@ airframes:
     identities:
       - reg: VT-KFG
         country: IN
-        to: "2012"
+        from: 2005-10
+        to: 2012-04
       - reg: EI-EWE
       - reg: RP-C8997
       - reg: XA-VAZ
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
+        from: 2005-10
+        to: 2012-04
     sources:
       - ref: https://www.airfleets.es/ficheapp/plane-a320-2576.htm
       - ref: https://xfw-spotter.blogspot.com/2005/10/
@@ -369,13 +373,15 @@ airframes:
     identities:
       - reg: VT-KFH
         country: IN
-        to: "2012"
+        from: 2005-12
+        to: 2012-10
       - reg: EI-EYA
       - reg: YU-APC
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
+        from: 2005-12
+        to: 2012-10
     sources:
       - ref: https://www.jetphotos.com/info/A32X-2621
       - ref: https://www.airhistory.net/operators/427/Air-Serbia-GetJet-Airlines
@@ -389,20 +395,20 @@ airframes:
     status:
       state: active
       as_of: 2026-08-25
-      note: Bangkok Airways; photographed Koh Samui 19 Aug 2025, flights recorded 2026
+      note: Bangkok Airways; stored from Dec 2011, transferred Mar 2012
     events: []
     identities:
       - reg: VT-KFI
         country: IN
-        from: "2005"
-        to: "2012"
+        from: 2005-12
+        to: 2011-12
       - reg: EI-EXZ
       - reg: HS-PPF
     eras:
       - operator_id: kingfisher
         role: passenger
-        from: "2005"
-        to: "2012"
+        from: 2005-12
+        to: 2011-12
     sources:
       - ref: https://www.jetphotos.com/info/A32X-2634
       - ref: https://www.airfleets.es/ficheapp/plane-a319-2634.htm
@@ -421,14 +427,18 @@ airframes:
     identities:
       - reg: VT-KFJ
         country: IN
-        to: "2012"
+        from: 2006-01
+        to: 2012-11
       - reg: M-BOCA
       - reg: HS-PPG
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
-    sources: []
+        from: 2006-01
+        to: 2012-11
+    sources:
+      - ref: https://www.jetphotos.com/info/A32X-2664
+      - ref: https://www.airfleets.fr/ficheapp/plane-a319-2664.htm
     confidence:
       identity: verified
       status: partial
@@ -441,19 +451,23 @@ airframes:
       as_of: 2026-08-25
       place:
         name: Knock, Ireland
-      note: scrapped Apr 2021
+      note: returned to lessor Sep 2012; scrapped 2021
     events: []
     identities:
       - reg: VT-KFK
         country: IN
-        to: "2012"
+        from: 2006-02
+        to: 2012-09
+      - reg: EI-EWS
       - reg: VN-A557
       - reg: VT-IHQ
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
-    sources: []
+        from: 2006-02
+        to: 2012-09
+    sources:
+      - ref: https://www.jetphotos.com/info/A32X-2670
     confidence:
       identity: verified
       status: partial
@@ -492,20 +506,20 @@ airframes:
     status:
       state: active
       as_of: 2026-08-25
-      note: SAS; M-ABFN from Apr 2013, OY-KAY from Nov 2013
+      note: SAS; M-ABFN Apr 2013, OY-KAY Nov 2013
     events: []
     identities:
       - reg: VT-KFM
         country: IN
         from: 2006-08
-        to: "2012"
+        to: 2012-10
       - reg: M-ABFN
       - reg: OY-KAY
     eras:
       - operator_id: kingfisher
         role: passenger
         from: 2006-08
-        to: "2012"
+        to: 2012-10
     sources:
       - ref: https://www.airfleets.net/ficheapp/plane-a320-2856.htm
       - ref: https://oy-reg.dk/register/?p=20&sort=type
@@ -544,12 +558,13 @@ airframes:
     status:
       state: stored
       as_of: 2026-08-25
-      note: converted to freighter, stored after conversion
+      note: freighter conversion completed 2024; stored
     events: []
     identities:
       - reg: VT-KFP
         country: IN
-        to: "2012"
+        from: 2006-10
+        to: 2012-10
       - reg: OE-ICJ
       - reg: TC-JMN
       - reg: P4-AAI
@@ -557,8 +572,10 @@ airframes:
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
-    sources: []
+        from: 2006-10
+        to: 2012-10
+    sources:
+      - ref: https://www.jetphotos.com/info/A32X-2919
     confidence:
       identity: verified
       status: partial
@@ -569,23 +586,27 @@ airframes:
     status:
       state: active
       as_of: 2026-08-25
-      note: Air Seoul; flight recorded 8 Aug 2026
+      note: Air Seoul; flight recorded 8 Aug 2026; left Kingfisher before the collapse
     events: []
     identities:
       - reg: VT-KFQ
         country: IN
-        to: "2012"
+        from: 2006-11
+        to: 2012-02
       - reg: N927AG
       - reg: VQ-BRO
       - reg: HL8073
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
-    sources: []
+        from: 2006-11
+        to: 2012-02
+    sources:
+      - ref: https://www.jetphotos.com/info/A32X-2927
+      - ref: https://www.airfleets.fr/ficheapp/plane-a321-2927.htm
     confidence:
       identity: verified
-      status: partial
+      status: verified
   - airframe_id: airbus-2933
     manufacturer: Airbus
     type: A321-232
@@ -809,25 +830,28 @@ airframes:
     type: ATR 72-212A
     msn: "729"
     status:
-      state: unknown
+      state: written_off
       as_of: 2026-08-25
-      note: "CONFLICT: sources disagree on whether written off after the 2009 Mumbai
-        accident — see notes"
+      place:
+        name: Mumbai, India
+      note: runway excursion on flight IT-4124, 10 Nov 2009; damaged beyond repair
     events: []
     identities:
       - reg: VT-KAC
         country: IN
-        to: "2012"
+        from: 2006-06
+        to: 2009-11
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
+        from: 2006-06
+        to: 2009-11
     sources:
       - ref: https://asn.flightsafety.org/reports/2009/20091110_AT75_VT-KAC.pdf
-      - ref: https://skybrary.aero/index.php/accidents-and-incidents/at72-mumbai-india-2009
+      - ref: https://www.planespotters.net/airframe/atr-72-vt-kac-kingfisher-airlines/elw7gn
     confidence:
       identity: verified
-      status: sketchy
+      status: verified
   - airframe_id: atr-730
     manufacturer: ATR
     type: ATR 72-212A
@@ -840,10 +864,12 @@ airframes:
     identities:
       - reg: VT-KAD
         country: IN
+        from: "2006"
         to: "2012"
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2006"
         to: "2012"
     sources: []
     confidence:
@@ -862,11 +888,13 @@ airframes:
     identities:
       - reg: VT-KAE
         country: IN
-        to: "2012"
+        from: "2006"
+        to: 2012-10
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
+        from: "2006"
+        to: 2012-10
     sources: []
     confidence:
       identity: verified
@@ -882,11 +910,13 @@ airframes:
     identities:
       - reg: VT-KAF
         country: IN
-        to: "2012"
+        from: "2006"
+        to: 2012-10
     eras:
       - operator_id: kingfisher
         role: passenger
-        to: "2012"
+        from: "2006"
+        to: 2012-10
     sources: []
     confidence:
       identity: verified
@@ -902,10 +932,12 @@ airframes:
     identities:
       - reg: VT-KAG
         country: IN
+        from: "2007"
         to: "2012"
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -923,11 +955,13 @@ airframes:
     identities:
       - reg: VT-KAH
         country: IN
+        from: "2007"
         to: "2012"
       - reg: PK-PAW
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -967,11 +1001,13 @@ airframes:
     identities:
       - reg: VT-KAJ
         country: IN
+        from: "2007"
         to: "2012"
       - reg: HS-DRD
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -989,11 +1025,13 @@ airframes:
     identities:
       - reg: VT-KAK
         country: IN
+        from: "2007"
         to: "2012"
       - reg: VT-JDD
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1011,11 +1049,13 @@ airframes:
     identities:
       - reg: VT-KAL
         country: IN
+        from: "2007"
         to: "2012"
       - reg: F-ONCL
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1033,11 +1073,13 @@ airframes:
     identities:
       - reg: VT-KAM
         country: IN
+        from: "2007"
         to: "2012"
       - reg: VT-APB
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1055,11 +1097,13 @@ airframes:
     identities:
       - reg: VT-KAN
         country: IN
+        from: "2007"
         to: "2012"
       - reg: VT-CMA
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1077,11 +1121,13 @@ airframes:
     identities:
       - reg: VT-KAO
         country: IN
+        from: "2007"
         to: "2012"
       - reg: VT-JDC
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1099,11 +1145,13 @@ airframes:
     identities:
       - reg: VT-KAP
         country: IN
+        from: "2007"
         to: "2012"
       - reg: 9N-ALN
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1121,11 +1169,13 @@ airframes:
     identities:
       - reg: VT-KAQ
         country: IN
+        from: "2007"
         to: "2012"
       - reg: HS-KAD
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1143,11 +1193,13 @@ airframes:
     identities:
       - reg: VT-KAR
         country: IN
+        from: "2007"
         to: "2012"
       - reg: OY-CRV
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:
@@ -1165,11 +1217,13 @@ airframes:
     identities:
       - reg: VT-KAS
         country: IN
+        from: "2007"
         to: "2012"
       - reg: A2-ABR
     eras:
       - operator_id: kingfisher
         role: passenger
+        from: "2007"
         to: "2012"
     sources: []
     confidence:

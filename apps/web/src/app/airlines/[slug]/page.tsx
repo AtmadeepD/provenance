@@ -50,11 +50,35 @@ export default async function DiasporaPage({ params }: { params: Promise<{ slug:
   
   const total = data.airframes.length;
   
+  const primaryKeywords = ['court', 'dgca', 'ncaer', 'mstc', 'hifly'];
   const sourceRefs = new Set<string>();
   data.airframes.forEach(af => {
     af.sources?.forEach(s => sourceRefs.add(s.ref));
   });
   const allSources = Array.from(sourceRefs);
+
+  const primarySources: string[] = [];
+  const domainGroups: Record<string, string[]> = {};
+
+  allSources.forEach(src => {
+    let url;
+    try { url = new URL(src); } catch { return; }
+    
+    const domain = url.hostname.replace(/^www\./, '');
+    const isPrimary = primaryKeywords.some(kw => domain.toLowerCase().includes(kw));
+
+    if (isPrimary) {
+      primarySources.push(src);
+    } else {
+      if (!domainGroups[domain]) domainGroups[domain] = [];
+      domainGroups[domain].push(src);
+    }
+  });
+
+  const mDomains = new Set(allSources.map(s => {
+    try { return new URL(s).hostname.replace(/^www\./, ''); } catch { return ''; }
+  }).filter(Boolean)).size;
+  const nReferences = allSources.length;
 
   return (
     <>
@@ -81,14 +105,44 @@ export default async function DiasporaPage({ params }: { params: Promise<{ slug:
         <DiasporaClient airframes={data.airframes} liveryFallback={data.livery?.primary || '#B3202C'} />
       </Container>
       <SiteFooter date="2026-08-25">
-        <div className="space-y-1 max-w-[68ch] break-all">
-          {allSources.map(src => (
-            <div key={src}>
-              <a href={src} target="_blank" rel="noopener noreferrer" className="hover:text-ink underline decoration-rule hover:decoration-ink-3 transition-colors">
-                {src}
-              </a>
+        <div className="space-y-6 max-w-[68ch]">
+          {primarySources.length > 0 && (
+            <div className="space-y-2">
+              <Eyebrow>primary sources</Eyebrow>
+              <div className="space-y-1">
+                {primarySources.map(src => (
+                  <div key={src}>
+                    <a href={src} target="_blank" rel="noopener noreferrer" className="text-small hover:text-ink underline decoration-rule hover:decoration-ink-3 transition-colors break-all">
+                      {src}
+                    </a>
+                  </div>
+                ))}
+              </div>
             </div>
-          ))}
+          )}
+          
+          <details className="group">
+            <summary className="text-micro font-mono uppercase tracking-[0.06em] cursor-pointer text-ink-2 hover:text-ink transition-colors list-none select-none">
+              <span className="mr-2 inline-block transition-transform group-open:rotate-90">▸</span>
+              sources · {nReferences} references across {mDomains} domains
+            </summary>
+            <div className="mt-6 space-y-6 pl-4 border-l border-rule">
+              {Object.entries(domainGroups).sort(([a], [b]) => a.localeCompare(b)).map(([domain, links]) => (
+                <div key={domain} className="space-y-2">
+                  <Eyebrow>{domain}</Eyebrow>
+                  <div className="space-y-1">
+                    {links.map(src => (
+                      <div key={src}>
+                        <a href={src} target="_blank" rel="noopener noreferrer" className="text-small hover:text-ink underline decoration-rule hover:decoration-ink-3 transition-colors break-all">
+                          {src}
+                        </a>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </details>
         </div>
       </SiteFooter>
     </>

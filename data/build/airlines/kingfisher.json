@@ -22,7 +22,7 @@
       "status": {
         "state": "active",
         "as_of": "2026-08-25",
-        "note": "operating with Hi Fly Malta"
+        "note": "flying as 9H-HFK with Hi Fly Malta"
       },
       "events": [],
       "identities": [
@@ -206,7 +206,7 @@
         "place": {
           "name": "Teruel, Spain"
         },
-        "note": "withdrawn Feb 2022; moved Brussels to Teruel 9 May 2022"
+        "note": "stored at Teruel since 9 May 2022; physically sighted 13 Jul 2025"
       },
       "events": [],
       "identities": [
@@ -214,7 +214,10 @@
           "reg": "VT-VJP",
           "country": "IN",
           "from": "2008-08",
-          "to": "2012"
+          "to": "2012-02"
+        },
+        {
+          "reg": "D-ANJB"
         },
         {
           "reg": "VN-A383"
@@ -228,12 +231,15 @@
           "operator_id": "kingfisher",
           "role": "passenger",
           "from": "2008-08",
-          "to": "2012"
+          "to": "2012-02"
         }
       ],
       "sources": [
         {
           "ref": "https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/"
+        },
+        {
+          "ref": "https://www.jetphotos.com/registration/VT-VJP"
         }
       ],
       "confidence": {
@@ -290,7 +296,7 @@
           "reg": "VT-KFA",
           "country": "IN",
           "from": "2005-04",
-          "to": "2012"
+          "to": "2012-10"
         },
         {
           "reg": "VP-BHW"
@@ -301,7 +307,7 @@
           "operator_id": "kingfisher",
           "role": "passenger",
           "from": "2005-04",
-          "to": "2012"
+          "to": "2012-10"
         }
       ],
       "sources": [
@@ -335,8 +341,8 @@
         {
           "reg": "VT-KFB",
           "country": "IN",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-05",
+          "to": "2012-10"
         },
         {
           "reg": "OE-ICG"
@@ -352,8 +358,8 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-05",
+          "to": "2012-10"
         }
       ],
       "sources": [
@@ -377,7 +383,7 @@
       "status": {
         "state": "active",
         "as_of": "2026-08-25",
-        "note": "Smartwings / Global Aviation; 21st year in service"
+        "note": "Smartwings / Global Aviation"
       },
       "events": [],
       "identities": [
@@ -385,7 +391,7 @@
           "reg": "VT-KFC",
           "country": "IN",
           "from": "2005-07",
-          "to": "2012"
+          "to": "2012-08"
         },
         {
           "reg": "EI-EWO"
@@ -408,7 +414,7 @@
           "operator_id": "kingfisher",
           "role": "passenger",
           "from": "2005-07",
-          "to": "2012"
+          "to": "2012-08"
         }
       ],
       "sources": [
@@ -416,7 +422,7 @@
           "ref": "https://www.jetphotos.com/info/A32X-2496"
         },
         {
-          "ref": "https://xfw-spotter.blogspot.com/2005/07/a320-232-kingfisher-airlines-f-wwif-vt.html"
+          "ref": "https://www.aerotransport.org/php/archives.php?m=200507"
         }
       ],
       "confidence": {
@@ -520,8 +526,8 @@
         {
           "reg": "VT-KFF",
           "country": "IN",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-09",
+          "to": "2012-10"
         },
         {
           "reg": "HS-PPD"
@@ -534,8 +540,8 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-09",
+          "to": "2012-10"
         }
       ],
       "sources": [
@@ -569,7 +575,8 @@
         {
           "reg": "VT-KFG",
           "country": "IN",
-          "to": "2012"
+          "from": "2005-10",
+          "to": "2012-04"
         },
         {
           "reg": "EI-EWE"
@@ -585,7 +592,8 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2005-10",
+          "to": "2012-04"
         }
       ],
       "sources": [
@@ -616,7 +624,8 @@
         {
           "reg": "VT-KFH",
           "country": "IN",
-          "to": "2012"
+          "from": "2005-12",
+          "to": "2012-10"
         },
         {
           "reg": "EI-EYA"
@@ -629,7 +638,8 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2005-12",
+          "to": "2012-10"
         }
       ],
       "sources": [
@@ -653,15 +663,15 @@
       "status": {
         "state": "active",
         "as_of": "2026-08-25",
-        "note": "Bangkok Airways; photographed Koh Samui 19 Aug 2025, flights recorded 2026"
+        "note": "Bangkok Airways; stored from Dec 2011, transferred Mar 2012"
       },
       "events": [],
       "identities": [
         {
           "reg": "VT-KFI",
           "country": "IN",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-12",
+          "to": "2011-12"
         },
         {
           "reg": "EI-EXZ"
@@ -674,8 +684,8 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "from": "2005",
-          "to": "2012"
+          "from": "2005-12",
+          "to": "2011-12"
         }
       ],
       "sources": [
@@ -706,7 +716,8 @@
         {
           "reg": "VT-KFJ",
           "country": "IN",
-          "to": "2012"
+          "from": "2006-01",
+          "to": "2012-11"
         },
         {
           "reg": "M-BOCA"
@@ -719,10 +730,18 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006-01",
+          "to": "2012-11"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "ref": "https://www.jetphotos.com/info/A32X-2664"
+        },
+        {
+          "ref": "https://www.airfleets.fr/ficheapp/plane-a319-2664.htm"
+        }
+      ],
       "confidence": {
         "identity": "verified",
         "status": "partial"
@@ -739,14 +758,18 @@
         "place": {
           "name": "Knock, Ireland"
         },
-        "note": "scrapped Apr 2021"
+        "note": "returned to lessor Sep 2012; scrapped 2021"
       },
       "events": [],
       "identities": [
         {
           "reg": "VT-KFK",
           "country": "IN",
-          "to": "2012"
+          "from": "2006-02",
+          "to": "2012-09"
+        },
+        {
+          "reg": "EI-EWS"
         },
         {
           "reg": "VN-A557"
@@ -759,10 +782,15 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006-02",
+          "to": "2012-09"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "ref": "https://www.jetphotos.com/info/A32X-2670"
+        }
+      ],
       "confidence": {
         "identity": "verified",
         "status": "partial"
@@ -822,7 +850,7 @@
       "status": {
         "state": "active",
         "as_of": "2026-08-25",
-        "note": "SAS; M-ABFN from Apr 2013, OY-KAY from Nov 2013"
+        "note": "SAS; M-ABFN Apr 2013, OY-KAY Nov 2013"
       },
       "events": [],
       "identities": [
@@ -830,7 +858,7 @@
           "reg": "VT-KFM",
           "country": "IN",
           "from": "2006-08",
-          "to": "2012"
+          "to": "2012-10"
         },
         {
           "reg": "M-ABFN"
@@ -844,7 +872,7 @@
           "operator_id": "kingfisher",
           "role": "passenger",
           "from": "2006-08",
-          "to": "2012"
+          "to": "2012-10"
         }
       ],
       "sources": [
@@ -911,14 +939,15 @@
       "status": {
         "state": "stored",
         "as_of": "2026-08-25",
-        "note": "converted to freighter, stored after conversion"
+        "note": "freighter conversion completed 2024; stored"
       },
       "events": [],
       "identities": [
         {
           "reg": "VT-KFP",
           "country": "IN",
-          "to": "2012"
+          "from": "2006-10",
+          "to": "2012-10"
         },
         {
           "reg": "OE-ICJ"
@@ -937,10 +966,15 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006-10",
+          "to": "2012-10"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "ref": "https://www.jetphotos.com/info/A32X-2919"
+        }
+      ],
       "confidence": {
         "identity": "verified",
         "status": "partial"
@@ -954,14 +988,15 @@
       "status": {
         "state": "active",
         "as_of": "2026-08-25",
-        "note": "Air Seoul; flight recorded 8 Aug 2026"
+        "note": "Air Seoul; flight recorded 8 Aug 2026; left Kingfisher before the collapse"
       },
       "events": [],
       "identities": [
         {
           "reg": "VT-KFQ",
           "country": "IN",
-          "to": "2012"
+          "from": "2006-11",
+          "to": "2012-02"
         },
         {
           "reg": "N927AG"
@@ -977,13 +1012,21 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006-11",
+          "to": "2012-02"
         }
       ],
-      "sources": [],
+      "sources": [
+        {
+          "ref": "https://www.jetphotos.com/info/A32X-2927"
+        },
+        {
+          "ref": "https://www.airfleets.fr/ficheapp/plane-a321-2927.htm"
+        }
+      ],
       "confidence": {
         "identity": "verified",
-        "status": "partial"
+        "status": "verified"
       }
     },
     {
@@ -1333,23 +1376,28 @@
       "type": "ATR 72-212A",
       "msn": "729",
       "status": {
-        "state": "unknown",
+        "state": "written_off",
         "as_of": "2026-08-25",
-        "note": "CONFLICT: sources disagree on whether written off after the 2009 Mumbai accident — see notes"
+        "place": {
+          "name": "Mumbai, India"
+        },
+        "note": "runway excursion on flight IT-4124, 10 Nov 2009; damaged beyond repair"
       },
       "events": [],
       "identities": [
         {
           "reg": "VT-KAC",
           "country": "IN",
-          "to": "2012"
+          "from": "2006-06",
+          "to": "2009-11"
         }
       ],
       "eras": [
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006-06",
+          "to": "2009-11"
         }
       ],
       "sources": [
@@ -1357,12 +1405,12 @@
           "ref": "https://asn.flightsafety.org/reports/2009/20091110_AT75_VT-KAC.pdf"
         },
         {
-          "ref": "https://skybrary.aero/index.php/accidents-and-incidents/at72-mumbai-india-2009"
+          "ref": "https://www.planespotters.net/airframe/atr-72-vt-kac-kingfisher-airlines/elw7gn"
         }
       ],
       "confidence": {
         "identity": "verified",
-        "status": "sketchy"
+        "status": "verified"
       }
     },
     {
@@ -1380,6 +1428,7 @@
         {
           "reg": "VT-KAD",
           "country": "IN",
+          "from": "2006",
           "to": "2012"
         }
       ],
@@ -1387,6 +1436,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2006",
           "to": "2012"
         }
       ],
@@ -1413,14 +1463,16 @@
         {
           "reg": "VT-KAE",
           "country": "IN",
-          "to": "2012"
+          "from": "2006",
+          "to": "2012-10"
         }
       ],
       "eras": [
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006",
+          "to": "2012-10"
         }
       ],
       "sources": [],
@@ -1443,14 +1495,16 @@
         {
           "reg": "VT-KAF",
           "country": "IN",
-          "to": "2012"
+          "from": "2006",
+          "to": "2012-10"
         }
       ],
       "eras": [
         {
           "operator_id": "kingfisher",
           "role": "passenger",
-          "to": "2012"
+          "from": "2006",
+          "to": "2012-10"
         }
       ],
       "sources": [],
@@ -1473,6 +1527,7 @@
         {
           "reg": "VT-KAG",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1480,6 +1535,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1504,6 +1560,7 @@
         {
           "reg": "VT-KAH",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1514,6 +1571,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1570,6 +1628,7 @@
         {
           "reg": "VT-KAJ",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1580,6 +1639,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1604,6 +1664,7 @@
         {
           "reg": "VT-KAK",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1614,6 +1675,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1638,6 +1700,7 @@
         {
           "reg": "VT-KAL",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1648,6 +1711,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1672,6 +1736,7 @@
         {
           "reg": "VT-KAM",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1682,6 +1747,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1706,6 +1772,7 @@
         {
           "reg": "VT-KAN",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1716,6 +1783,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1740,6 +1808,7 @@
         {
           "reg": "VT-KAO",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1750,6 +1819,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1774,6 +1844,7 @@
         {
           "reg": "VT-KAP",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1784,6 +1855,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1808,6 +1880,7 @@
         {
           "reg": "VT-KAQ",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1818,6 +1891,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1842,6 +1916,7 @@
         {
           "reg": "VT-KAR",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1852,6 +1927,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],
@@ -1876,6 +1952,7 @@
         {
           "reg": "VT-KAS",
           "country": "IN",
+          "from": "2007",
           "to": "2012"
         },
         {
@@ -1886,6 +1963,7 @@
         {
           "operator_id": "kingfisher",
           "role": "passenger",
+          "from": "2007",
           "to": "2012"
         }
       ],

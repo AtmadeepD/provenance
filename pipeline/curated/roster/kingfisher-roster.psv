@@ -15,32 +15,32 @@
 reg|type|msn|kf_from|kf_to|later_ids|state|place|note|id_conf|st_conf|src1|src2
 
 # ── A330-200 fleet (5) ──────────────────────────────────────────────────────
-VT-VJK|A330-223|874|2008-06|2012|LZ-AWZ > TC-LNA > 9H-HFK|active||operating with Hi Fly Malta|verified|verified|https://hifly.aero/fleet/a330/9h-hfk/|https://www.flightradar24.com/data/aircraft/9h-hfk/
+VT-VJK|A330-223|874|2008-06|2012|LZ-AWZ > TC-LNA > 9H-HFK|active||flying as 9H-HFK with Hi Fly Malta|verified|verified|https://hifly.aero/fleet/a330/9h-hfk/|https://www.flightradar24.com/data/aircraft/9h-hfk/
 VT-VJL|A330-223|891|2008|2012|5N-JIC|scrapped|Lourdes, France|via Arik Air; broken up 2022|verified|partial|https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/|https://www.airfleets.net/ficheapp/plane-a330-891.htm
 VT-VJN|A330-223|927|2008-08|2012-03||scrapped|Lourdes, France|Arik Air from Oct 2012; broken up 2021|verified|partial|https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/|https://www.airliners.net/photo-albums/view/Kingfisher-Airlines/31304
 VT-VJO|A330-223|939|2008|2011|9H-HFJ|active||operating with Hi Fly|verified|verified|https://hifly.aero/fleet/a330/9h-hfj/|https://www.flightradar24.com/data/aircraft/9h-hfj
-VT-VJP|A330-223|946|2008-08|2012|VN-A383 > EI-GCU|stored|Teruel, Spain|withdrawn Feb 2022; moved Brussels to Teruel 9 May 2022|verified|verified|https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/|
+VT-VJP|A330-223|946|2008-08|2012-02|D-ANJB > VN-A383 > EI-GCU|stored|Teruel, Spain|stored at Teruel since 9 May 2022; physically sighted 13 Jul 2025|verified|verified|https://simpleflying.com/kingfisher-airlines-widebody-fleet-story/|https://www.jetphotos.com/registration/VT-VJP
 
 # ── VT-VJ exception: NOT an A330 ────────────────────────────────────────────
 VT-VJM|A319-133CJ|2650||||unknown||offered in government auction after collapse|verified|sketchy|https://www.mstcindia.co.in/mstc_static_pages/wro/EA_WRO_16-17_3/EA_16-17_3_MSTC_FAQ.pdf|
 
 # ── Mainline KF block: A319 / A320 / A321 (24) ──────────────────────────────
-VT-KFA|A320-232|2413|2005-04|2012|VP-BHW|active||Yamal Airlines; returned to ILFC and stored Dublin early 2012|verified|partial|https://www.jetphotos.com/info/A32X-2413|https://www.pictaero.com/en/search/search?a4=VT-KFA
-VT-KFB|A320-232|2443|2005|2012|OE-ICG > XA-VAF > VT-IHS|scrapped|Teruel, Spain|broken up Aug 2021 after three post-Kingfisher operators|verified|verified|https://www.airfleets.fr/ficheapp/plane-a320-2443.htm|https://xfw-spotter.blogspot.com/2005/05/a320-232-kingfisher-airlines-f-wwbr-vt.html
-VT-KFC|A320-232|2496|2005-07|2012|EI-EWO > AP-BMC > YR-DSI > RP-C7938 > ZS-GAC|active||Smartwings / Global Aviation; 21st year in service|verified|verified|https://www.jetphotos.com/info/A32X-2496|https://xfw-spotter.blogspot.com/2005/07/a320-232-kingfisher-airlines-f-wwif-vt.html
+VT-KFA|A320-232|2413|2005-04|2012-10|VP-BHW|active||Yamal Airlines; returned to ILFC and stored Dublin early 2012|verified|partial|https://www.jetphotos.com/info/A32X-2413|https://www.pictaero.com/en/search/search?a4=VT-KFA
+VT-KFB|A320-232|2443|2005-05|2012-10|OE-ICG > XA-VAF > VT-IHS|scrapped|Teruel, Spain|broken up Aug 2021 after three post-Kingfisher operators|verified|verified|https://www.airfleets.fr/ficheapp/plane-a320-2443.htm|https://xfw-spotter.blogspot.com/2005/05/a320-232-kingfisher-airlines-f-wwbr-vt.html
+VT-KFC|A320-232|2496|2005-07|2012-08|EI-EWO > AP-BMC > YR-DSI > RP-C7938 > ZS-GAC|active||Smartwings / Global Aviation|verified|verified|https://www.jetphotos.com/info/A32X-2496|https://www.aerotransport.org/php/archives.php?m=200507
 VT-KFD|A320-232|2502||2012|OE-IBH|unknown||chain after OE-IBH not established|verified|sketchy|https://www.jetphotos.com/registration/VT-KFD|https://www.flickr.com/photos/mcdee6174/6961715397
 VT-KFE|A320-232|2522||2012|TC-JUJ > OE-LOT > 9H-LOT|unknown||Lauda Europe chain reported but not independently corroborated|verified|sketchy||
-VT-KFF|A320-232|2531|2005|2012|HS-PPD > LY-WSM|active||Heston Airlines|verified|verified|https://www.jetphotos.com/info/A32X-2531|https://commons.wikimedia.org/wiki/Category:VT-KFF_(aircraft)
-VT-KFG|A320-232|2576||2012|EI-EWE > RP-C8997 > XA-VAZ|written_off|Puerto Vallarta, Mexico|nose-gear collapse 18 Mar 2021|verified|verified|https://www.airfleets.es/ficheapp/plane-a320-2576.htm|https://xfw-spotter.blogspot.com/2005/10/
-VT-KFH|A319-131|2621||2012|EI-EYA > YU-APC|active||Air Serbia; photographed Tivat 12 Jul 2026|verified|verified|https://www.jetphotos.com/info/A32X-2621|https://www.airhistory.net/operators/427/Air-Serbia-GetJet-Airlines
-VT-KFI|A319-132|2634|2005|2012|EI-EXZ > HS-PPF|active||Bangkok Airways; photographed Koh Samui 19 Aug 2025, flights recorded 2026|verified|verified|https://www.jetphotos.com/info/A32X-2634|https://www.airfleets.es/ficheapp/plane-a319-2634.htm
-VT-KFJ|A319|2664||2012|M-BOCA > HS-PPG|active||Bangkok Airways; photographed Bangkok 4 Feb 2026|verified|partial||
-VT-KFK|A320-232|2670||2012|VN-A557 > VT-IHQ|scrapped|Knock, Ireland|scrapped Apr 2021|verified|partial||
+VT-KFF|A320-232|2531|2005-09|2012-10|HS-PPD > LY-WSM|active||Heston Airlines|verified|verified|https://www.jetphotos.com/info/A32X-2531|https://commons.wikimedia.org/wiki/Category:VT-KFF_(aircraft)
+VT-KFG|A320-232|2576|2005-10|2012-04|EI-EWE > RP-C8997 > XA-VAZ|written_off|Puerto Vallarta, Mexico|nose-gear collapse 18 Mar 2021|verified|verified|https://www.airfleets.es/ficheapp/plane-a320-2576.htm|https://xfw-spotter.blogspot.com/2005/10/
+VT-KFH|A319-131|2621|2005-12|2012-10|EI-EYA > YU-APC|active||Air Serbia; photographed Tivat 12 Jul 2026|verified|verified|https://www.jetphotos.com/info/A32X-2621|https://www.airhistory.net/operators/427/Air-Serbia-GetJet-Airlines
+VT-KFI|A319-132|2634|2005-12|2011-12|EI-EXZ > HS-PPF|active||Bangkok Airways; stored from Dec 2011, transferred Mar 2012|verified|verified|https://www.jetphotos.com/info/A32X-2634|https://www.airfleets.es/ficheapp/plane-a319-2634.htm
+VT-KFJ|A319|2664|2006-01|2012-11|M-BOCA > HS-PPG|active||Bangkok Airways; photographed Bangkok 4 Feb 2026|verified|partial|https://www.jetphotos.com/info/A32X-2664|https://www.airfleets.fr/ficheapp/plane-a319-2664.htm
+VT-KFK|A320-232|2670|2006-02|2012-09|EI-EWS > VN-A557 > VT-IHQ|scrapped|Knock, Ireland|returned to lessor Sep 2012; scrapped 2021|verified|partial|https://www.jetphotos.com/info/A32X-2670|
 VT-KFL|A320-232|2817|2006-07|2012|M-ABFP > OY-KAW|unknown||SAS history established; Danish registration cancelled 2025, current status unresolved|verified|sketchy|https://www.oy-reg.dk/register/6152.html|https://www.jetphotos.com/info/A32X-2817
-VT-KFM|A320-232|2856|2006-08|2012|M-ABFN > OY-KAY|active||SAS; M-ABFN from Apr 2013, OY-KAY from Nov 2013|verified|partial|https://www.airfleets.net/ficheapp/plane-a320-2856.htm|https://oy-reg.dk/register/?p=20&sort=type
+VT-KFM|A320-232|2856|2006-08|2012-10|M-ABFN > OY-KAY|active||SAS; M-ABFN Apr 2013, OY-KAY Nov 2013|verified|partial|https://www.airfleets.net/ficheapp/plane-a320-2856.htm|https://oy-reg.dk/register/?p=20&sort=type
 VT-KFN|A321-232|2916||2012|OE-ICI > TC-JMM > P4-AAJ > TC-GPE|unknown||BBN Airlines, photographed 2024|verified|sketchy||
-VT-KFP|A321-231|2919||2012|OE-ICJ > TC-JMN > P4-AAI > N919NX|stored||converted to freighter, stored after conversion|verified|partial||
-VT-KFQ|A321-232|2927||2012|N927AG > VQ-BRO > HL8073|active||Air Seoul; flight recorded 8 Aug 2026|verified|partial||
+VT-KFP|A321-231|2919|2006-10|2012-10|OE-ICJ > TC-JMN > P4-AAI > N919NX|stored||freighter conversion completed 2024; stored|verified|partial|https://www.jetphotos.com/info/A32X-2919|
+VT-KFQ|A321-232|2927|2006-11|2012-02|N927AG > VQ-BRO > HL8073|active||Air Seoul; flight recorded 8 Aug 2026; left Kingfisher before the collapse|verified|verified|https://www.jetphotos.com/info/A32X-2927|https://www.airfleets.fr/ficheapp/plane-a321-2927.htm
 VT-KFR|A321-232|2933||2012|HL8072|unknown||Air Seoul reported; chain incomplete|verified|sketchy||
 VT-KFS|A321-232|3034||2012||unknown|||verified|sketchy|https://www.aitd.net.in/NTDPC/Working%20Group%20Reports/Railways/Study%20on%20Fiscal%20Issues%20and%20Allocative%20Efficiency_Submitted%20to%20the%20Govt%20on.pdf|
 VT-KFT|A320|3089||2012||unknown|||verified|sketchy|https://repository.uph.edu/id/eprint/65620/15/ToC.pdf|https://www.aitd.net.in/NTDPC/Working%20Group%20Reports/Railways/Study%20on%20Fiscal%20Issues%20and%20Allocative%20Efficiency_Submitted%20to%20the%20Govt%20on.pdf
@@ -55,23 +55,23 @@ VT-KFZ|A321-231|3322||2012||unknown|||partial|sketchy||
 # strong; the onward chains need a second source before promotion to verified.
 VT-KAA|ATR 72-212A|699|2006-03|2012-03|VT-APA|unknown||repossessed by lessor Mar 2012, then offered to Air Pegasus|verified|sketchy||
 VT-KAB|ATR 72-212A|728|2006|2012||scrapped||broken up 2022|verified|partial||
-VT-KAC|ATR 72-212A|729||2012||unknown||CONFLICT: sources disagree on whether written off after the 2009 Mumbai accident — see notes|verified|sketchy|https://asn.flightsafety.org/reports/2009/20091110_AT75_VT-KAC.pdf|https://skybrary.aero/index.php/accidents-and-incidents/at72-mumbai-india-2009
-VT-KAD|ATR 72-212A|730||2012||unknown||named in lessor custody dispute|verified|sketchy||
-VT-KAE|ATR 72-212A|737||2012||scrapped|Chennai, India||verified|sketchy||
-VT-KAF|ATR 72-212A|738||2012||unknown|||verified|sketchy||
-VT-KAG|ATR 72-212A|743||2012||unknown|||verified|sketchy||
-VT-KAH|ATR 72-212A|746||2012|PK-PAW|unknown||Pelita Air|verified|sketchy||
+VT-KAC|ATR 72-212A|729|2006-06|2009-11||written_off|Mumbai, India|runway excursion on flight IT-4124, 10 Nov 2009; damaged beyond repair|verified|verified|https://asn.flightsafety.org/reports/2009/20091110_AT75_VT-KAC.pdf|https://www.planespotters.net/airframe/atr-72-vt-kac-kingfisher-airlines/elw7gn
+VT-KAD|ATR 72-212A|730|2006|2012||unknown||named in lessor custody dispute|verified|sketchy||
+VT-KAE|ATR 72-212A|737|2006|2012-10||scrapped|Chennai, India||verified|sketchy||
+VT-KAF|ATR 72-212A|738|2006|2012-10||unknown|||verified|sketchy||
+VT-KAG|ATR 72-212A|743|2007|2012||unknown|||verified|sketchy||
+VT-KAH|ATR 72-212A|746|2007|2012|PK-PAW|unknown||Pelita Air|verified|sketchy||
 VT-KAI|ATR 72-212A|750|2007-06|2012||unknown|||verified|sketchy||
-VT-KAJ|ATR 72-212A|754||2012|HS-DRD|unknown||Nok Air|verified|sketchy||
-VT-KAK|ATR 72-212A|758||2012|VT-JDD|unknown||JetKonnect|verified|sketchy||
-VT-KAL|ATR 72-212A|759||2012|F-ONCL|unknown||Air Caledonie|verified|sketchy||
-VT-KAM|ATR 72-212A|762||2012|VT-APB|unknown||Air Pegasus|verified|sketchy||
-VT-KAN|ATR 72-212A|767||2012|VT-CMA|unknown||Air Carnival|verified|sketchy||
-VT-KAO|ATR 72-212A|772||2012|VT-JDC|unknown||JetKonnect|verified|sketchy||
-VT-KAP|ATR 72-212A|776||2012|9N-ALN|unknown||Yeti Airlines|verified|sketchy||
-VT-KAQ|ATR 72-212A|777||2012|HS-KAD|unknown||Kan Air|verified|sketchy||
-VT-KAR|ATR 72-212A|782||2012|OY-CRV|unknown||Mistral Air|verified|sketchy||
-VT-KAS|ATR 72-212A|786||2012|A2-ABR|unknown||Air Botswana|verified|sketchy||
+VT-KAJ|ATR 72-212A|754|2007|2012|HS-DRD|unknown||Nok Air|verified|sketchy||
+VT-KAK|ATR 72-212A|758|2007|2012|VT-JDD|unknown||JetKonnect|verified|sketchy||
+VT-KAL|ATR 72-212A|759|2007|2012|F-ONCL|unknown||Air Caledonie|verified|sketchy||
+VT-KAM|ATR 72-212A|762|2007|2012|VT-APB|unknown||Air Pegasus|verified|sketchy||
+VT-KAN|ATR 72-212A|767|2007|2012|VT-CMA|unknown||Air Carnival|verified|sketchy||
+VT-KAO|ATR 72-212A|772|2007|2012|VT-JDC|unknown||JetKonnect|verified|sketchy||
+VT-KAP|ATR 72-212A|776|2007|2012|9N-ALN|unknown||Yeti Airlines|verified|sketchy||
+VT-KAQ|ATR 72-212A|777|2007|2012|HS-KAD|unknown||Kan Air|verified|sketchy||
+VT-KAR|ATR 72-212A|782|2007|2012|OY-CRV|unknown||Mistral Air|verified|sketchy||
+VT-KAS|ATR 72-212A|786|2007|2012|A2-ABR|unknown||Air Botswana|verified|sketchy||
 
 # ── Air Deccan inheritance — the GECAS four ─────────────────────────────────
 # All four originated with Air Deccan and were repossessed in 2008-09, four years

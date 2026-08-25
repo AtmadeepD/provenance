@@ -58,12 +58,15 @@ export function SiteNav() {
                     {link.label}
                   </Link>
                 ) : (
-                  <span
+                  <a
+                    href={link.href}
+                    tabIndex={-1}
                     className="text-body text-ink-3 cursor-not-allowed"
                     aria-disabled="true"
+                    onClick={e => e.preventDefault()}
                   >
                     {link.label}
-                  </span>
+                  </a>
                 )}
               </span>
             ))}
@@ -94,12 +97,15 @@ export function SiteNav() {
                   {link.label}
                 </Link>
               ) : (
-                <span
+                <a
+                  href={link.href}
+                  tabIndex={-1}
                   className="block text-body text-ink-3 cursor-not-allowed"
                   aria-disabled="true"
+                  onClick={e => e.preventDefault()}
                 >
                   {link.label}
-                </span>
+                </a>
               )}
             </span>
           ))}

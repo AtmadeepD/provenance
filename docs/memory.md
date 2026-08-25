@@ -63,6 +63,13 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.9 — Data corrections and UI fixes
+- Fixed the lifeline time domain to span the aircraft's whole life to correctly visualize `maxDate`.
+- Upgraded the sources footer into a grouped details element.
+- Fixed the navigation disabled state by replacing spans with `a` tags containing `tabIndex={-1}`.
+- Rebuilt data after correcting the PSV based on `kf_to` ruling. 
+- *Note on VT-KAC*: The DGCA report states the aircraft held a valid Certificate of Airworthiness *at the time of the accident* — which is what the "it survived" reading was built on. It says nothing about the aircraft's condition afterwards. Independent airframe records give damaged-beyond-repair. This was corrected to `written_off`.
+
 ### 2026-08-25 · Session 0.8 — Share card and ship
 - Implemented `api/og/route.tsx` using `next/og` for dynamic 1200x630 OG image generation rendering the airline's dynamic fate strip and tokens.
 - Wired `/airlines/[slug]` to output OpenGraph and Twitter metadata linking to the OG image endpoint.

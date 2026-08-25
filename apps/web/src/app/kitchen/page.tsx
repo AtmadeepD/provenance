@@ -129,20 +129,33 @@ export default function KitchenSink() {
             </div>
 
             <div>
-              <h4 className="text-small mb-2">Case (b) Missing dates (single muted bar)</h4>
-              <MiniLifeline 
-                eras={[
-                  { operator_id: 'kingfisher', role: 'passenger' }
-                ]}
-                identities={[
-                  { reg: 'VT-KFC' }
-                ]}
-                status={{ state: 'stored', as_of: '2026-08-25' }}
-              />
+              <h4 className="text-small mb-2">Case (b) 2012-scrapped vs 2026-active continuation rule</h4>
+              <div className="space-y-4">
+                <MiniLifeline 
+                  eras={[
+                    { operator_id: 'kingfisher', role: 'passenger', from: '2005-01', to: '2012-01' }
+                  ]}
+                  identities={[
+                    { reg: 'VT-KFA', from: '2005-01' }
+                  ]}
+                  status={{ state: 'active', as_of: '2026-08-25' }}
+                  liveryFallback="#B3202C"
+                />
+                <MiniLifeline 
+                  eras={[
+                    { operator_id: 'kingfisher', role: 'passenger', from: '2005-01', to: '2012-01' }
+                  ]}
+                  identities={[
+                    { reg: 'VT-KFB', from: '2005-01' }
+                  ]}
+                  status={{ state: 'scrapped', as_of: '2012-05-01' }}
+                  liveryFallback="#B3202C"
+                />
+              </div>
             </div>
-            
+
             <div>
-              <h4 className="text-small mb-2">Case (c) Unknown status</h4>
+              <h4 className="text-small mb-2">Case (c) Missing dates (single muted bar)</h4>
               <MiniLifeline 
                 eras={[
                   { operator_id: 'kingfisher', role: 'passenger' }
