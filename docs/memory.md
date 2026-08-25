@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.5b — Roster converter
+- Wrote `pipeline/emit/roster-to-yaml.mjs` to convert the `kingfisher-roster.psv` data into schema-valid YAML entries.
+- Fixed JSON Schema `identities` rule to make the `country` field optional to accommodate post-Kingfisher partial identities.
+- Parsed and merged all 68 aircraft into `kingfisher.yaml`, replacing placeholders.
+- Verified validation via `npm run build:data`, ensuring all 68 airframes built correctly.
+
 ### 2026-08-25 · Session 0.4b — Schema v2 migration
 - Rewrote `pipeline/curated/schema/airline.schema.json` to schema v2, removing `line_status` and `fate`, and adding `status`, `events`, and split `confidence`.
 - Updated `apps/web/src/lib/types.ts` to reflect the new structure perfectly.

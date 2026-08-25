@@ -12,6 +12,7 @@
   --fate-active: #2E7D57;
   --fate-stored: #B98A2F;
   --fate-scrapped: #9A3B3B;
+  --fate-writtenoff: #9A3B3B;
   --fate-preserved: #4C6FB3;
   --fate-unknown: #8B8F99;
   
@@ -31,6 +32,7 @@
   --color-fate-active: var(--fate-active);
   --color-fate-stored: var(--fate-stored);
   --color-fate-scrapped: var(--fate-scrapped);
+  --color-fate-writtenoff: var(--fate-writtenoff);
   --color-fate-preserved: var(--fate-preserved);
   --color-fate-unknown: var(--fate-unknown);
 

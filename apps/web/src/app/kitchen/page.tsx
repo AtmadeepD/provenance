@@ -3,6 +3,7 @@ import { Container } from '@/components/Container';
 import { Eyebrow } from '@/components/Eyebrow';
 import { FateChip, FateStatus } from '@/components/FateChip';
 import { Mono } from '@/components/Mono';
+import { MiniLifeline } from '@/components/lifeline/MiniLifeline';
 
 export const metadata = {
   robots: {
@@ -85,6 +86,73 @@ export default function KitchenSink() {
             {fateStatuses.map(status => (
               <FateChip key={status} status={status} />
             ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="space-y-6">
+        <Eyebrow rule>Mini-Lifeline</Eyebrow>
+        <div className="space-y-4">
+          <div className="p-6 bg-paper-sunken rounded-card space-y-8">
+            <div>
+              <h4 className="text-small mb-2">Case (a) Full dates (active 2-era)</h4>
+              <MiniLifeline 
+                eras={[
+                  { operator_id: 'twa', role: 'passenger', from: '1990-01', to: '2005-06' },
+                  { operator_id: 'kalitta', role: 'cargo', from: '2008-01', to: '2026-08' }
+                ]}
+                identities={[
+                  { reg: 'N123TW', from: '1990-01' },
+                  { reg: 'N456KA', from: '2008-01' }
+                ]}
+                status={{ state: 'active', as_of: '2026-08-25' }}
+                liveryFallback="#B3202C"
+              />
+            </div>
+            
+            <div>
+              <h4 className="text-small mb-2">Case (a) Full dates (scrapped 3-era, with gap)</h4>
+              <MiniLifeline 
+                eras={[
+                  { operator_id: 'air_deccan', role: 'passenger', from: '2004-01', to: '2008-01' },
+                  { operator_id: 'kingfisher', role: 'passenger', from: '2008-08', to: '2012-10' },
+                  { operator_id: 'other', role: 'passenger', from: '2014-01', to: '2020-01' }
+                ]}
+                identities={[
+                  { reg: 'VT-DKA', from: '2004-01' },
+                  { reg: 'VT-DKA', from: '2008-08' },
+                  { reg: 'M-ABFI', from: '2014-01' }
+                ]}
+                status={{ state: 'scrapped', as_of: '2026-08-25' }}
+                liveryFallback="#B3202C"
+              />
+            </div>
+
+            <div>
+              <h4 className="text-small mb-2">Case (b) Missing dates (single muted bar)</h4>
+              <MiniLifeline 
+                eras={[
+                  { operator_id: 'kingfisher', role: 'passenger' }
+                ]}
+                identities={[
+                  { reg: 'VT-KFC' }
+                ]}
+                status={{ state: 'stored', as_of: '2026-08-25' }}
+              />
+            </div>
+            
+            <div>
+              <h4 className="text-small mb-2">Case (c) Unknown status</h4>
+              <MiniLifeline 
+                eras={[
+                  { operator_id: 'kingfisher', role: 'passenger' }
+                ]}
+                identities={[
+                  { reg: 'VT-KFD' }
+                ]}
+                status={{ state: 'unknown', as_of: '2026-08-25' }}
+              />
+            </div>
           </div>
         </div>
       </section>
