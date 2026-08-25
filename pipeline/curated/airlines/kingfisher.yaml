@@ -9,7 +9,12 @@ livery:
 snapshot_fleet_size:
   count: 64–66
   as_of: late 2011 – February 2012
-obituary_md: ""
+obituary_md: |
+  Four years before Kingfisher Airlines finally collapsed, the cracks were already showing in court. In November 2008, lessor GECAS quietly repossessed four Airbus A320s (serials 2029, 2077, 3219, and 3183). These planes hadn't even been ordered by Kingfisher; they were inherited from Air Deccan, the low-cost carrier Kingfisher had swallowed to inflate its market share and secure international flying rights.
+
+  That acquisition bloated a boutique, red-carpet operation into an unsustainable hybrid. At its peak, Kingfisher operated a sprawling, chaotic fleet of over 60 aircraft. ATR turboprops flew regional routes alongside widebody A330s bought for global expansion that never really materialized.
+
+  When the money stopped, it wasn't a sudden death but a long, agonizing bleed. By February 2012, only 22 aircraft were still flying. The rest sat parked and unpaid across Indian airports—a massive, scattered fleet that took years of bitter legal fights for lessors to drag home.
 airframes:
   - airframe_id: airbus-874
     manufacturer: Airbus
