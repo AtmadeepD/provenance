@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.4b — Schema v2 migration
+- Rewrote `pipeline/curated/schema/airline.schema.json` to schema v2, removing `line_status` and `fate`, and adding `status`, `events`, and split `confidence`.
+- Updated `apps/web/src/lib/types.ts` to reflect the new structure perfectly.
+- Updated `kingfisher.yaml` placeholders and operator block to conform to schema v2.
+- Updated `pipeline/emit/build.mjs` with custom validation checking for missing `confidence.status` on known states, and mapped Ajv errors to output the aircraft registration on failure.
+
 ### 2026-08-25 · Session 0.4 — Data Contract
 - Defined JSON schema for airlines and airframes in `pipeline/curated/schema/airline.schema.json`.
 - Hand-assembled the initial structural template for `pipeline/curated/airlines/kingfisher.yaml` with 3 placeholder airframes.

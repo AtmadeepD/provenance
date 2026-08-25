@@ -84,7 +84,7 @@
                 "from": { "type": ["string", "null"] },
                 "to": { "type": ["string", "null"] }
               },
-              "required": ["reg", "country"]
+              "required": ["reg"]
             }
           },
           "eras": {
