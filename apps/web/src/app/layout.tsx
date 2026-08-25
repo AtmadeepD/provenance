@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Newsreader, Inter, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
+import { SiteNav } from "@/components/SiteNav";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const newsreader = Newsreader({
   variable: "--font-display",
@@ -33,7 +35,13 @@ export default function RootLayout({
       lang="en"
       className={`${newsreader.variable} ${inter.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SiteNav />
+        <div className="flex-1 flex flex-col">
+          {children}
+        </div>
+        <SiteFooter date="2026-08-25" />
+      </body>
     </html>
   );
 }

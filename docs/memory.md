@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.2 — Design Tokens
+- Set up globals.css with complete design.md §3 tokens (colors, typography scale, radii, shadows).
+- Configured reduced-motion media query and global visible focus rings.
+- Created UI primitives: Eyebrow, FateChip, Mono, Container.
+- Created `/kitchen` reference route (noindex) showcasing all primitives and tokens.
+
 ### 2026-08-25 · Session 0.1 — Scaffold
 - Next.js 15, Tailwind v4, and fonts (Newsreader, Inter, IBM Plex Mono) set up.
 - Directory skeleton initialized with .gitignore.
