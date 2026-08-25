@@ -1,13 +1,29 @@
-export type LineStatus = 'active' | 'stored' | 'scrapped' | 'preserved' | 'written_off' | 'unknown';
-export type Confidence = 'verified' | 'partial' | 'sketchy';
+export type AirframeState = 'active' | 'stored' | 'withdrawn' | 'scrapped' | 'written_off' | 'preserved' | 'unknown';
+export type EventType = 'delivery' | 'transfer' | 'repossession' | 'returned_to_lessor' | 'sold' | 'conversion' | 'accident' | 'storage' | 'return_to_service' | 'scrapped' | 'preserved';
+export type ConfidenceLevel = 'verified' | 'partial' | 'sketchy';
 
-export interface Fate {
-  status: LineStatus;
+export interface Confidence {
+  identity: ConfidenceLevel;
+  status: ConfidenceLevel;
+}
+
+export interface AirframeStatus {
+  state: AirframeState;
   place?: {
     name: string;
-    icao: string;
   };
-  date?: string;
+  as_of: string;
+  last_physical_sighting?: string;
+  note?: string;
+}
+
+export interface AirframeEvent {
+  date: string;
+  type: EventType;
+  place?: string;
+  party?: string;
+  flight?: string;
+  outcome?: string;
   note?: string;
 }
 
@@ -41,8 +57,8 @@ export interface Airframe {
   type: string;
   msn: string;
   first_flight?: string | null;
-  line_status: LineStatus;
-  fate: Fate;
+  status: AirframeStatus;
+  events: AirframeEvent[];
   identities: Identity[];
   eras: Era[];
   conversions?: Conversion[];
@@ -59,6 +75,11 @@ export interface AirlineData {
   livery: {
     primary: string;
     secondary: string;
+  };
+  snapshot_fleet_size?: {
+    count: string;
+    as_of: string;
+    sources?: string[];
   };
   obituary_md: string;
   airframes: Airframe[];

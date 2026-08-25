@@ -63,6 +63,13 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.4 — Data Contract
+- Defined JSON schema for airlines and airframes in `pipeline/curated/schema/airline.schema.json`.
+- Hand-assembled the initial structural template for `pipeline/curated/airlines/kingfisher.yaml` with 3 placeholder airframes.
+- Built Node.js script `pipeline/emit/build.mjs` to validate YAMLs against the schema using `ajv` and compile to `data/build/airlines/kingfisher.json`.
+- Configured Next.js `build:data` script in package.json to run data compilation before the UI build.
+- Generated matching TypeScript interfaces in `lib/types.ts` and a server-side JSON loader `lib/data.ts`.
+
 ### 2026-08-25 · Session 0.3 — Site Chrome
 - Built `SiteNav` component with sticky behavior, backdrop blur on scroll, and mobile menu toggle.
 - Handled disabled states for unbuilt routes with `aria-disabled` and --ink-3 styling.

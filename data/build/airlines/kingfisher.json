@@ -8,6 +8,11 @@
     "primary": "#B3202C",
     "secondary": "#EFE6D6"
   },
+  "snapshot_fleet_size": {
+    "count": "64–66",
+    "as_of": "late 2011 – February 2012",
+    "sources": []
+  },
   "obituary_md": "",
   "airframes": [
     {
@@ -16,16 +21,16 @@
       "type": "A320-232",
       "msn": "XXXX",
       "first_flight": "2009-06",
-      "line_status": "scrapped",
-      "fate": {
-        "status": "scrapped",
+      "status": {
+        "state": "scrapped",
         "place": {
-          "name": "Roswell, NM",
-          "icao": "KROW"
+          "name": "Roswell, NM"
         },
-        "date": "2021-04",
+        "as_of": "2026-08-25",
+        "last_physical_sighting": "2021-04",
         "note": "parted out"
       },
+      "events": [],
       "identities": [
         {
           "reg": "VT-XXX",
@@ -48,7 +53,10 @@
           "ref": "FAA registry"
         }
       ],
-      "confidence": "verified"
+      "confidence": {
+        "identity": "verified",
+        "status": "verified"
+      }
     },
     {
       "airframe_id": "airbus-xxxx-2",
@@ -56,10 +64,11 @@
       "type": "A330-223",
       "msn": "YYYY",
       "first_flight": "2008-01",
-      "line_status": "unknown",
-      "fate": {
-        "status": "unknown"
+      "status": {
+        "state": "unknown",
+        "as_of": "2026-08-25"
       },
+      "events": [],
       "identities": [
         {
           "reg": "VT-YYY",
@@ -82,7 +91,10 @@
           "ref": "Wikipedia"
         }
       ],
-      "confidence": "sketchy"
+      "confidence": {
+        "identity": "sketchy",
+        "status": "sketchy"
+      }
     },
     {
       "airframe_id": "atr-zzzz",
@@ -90,10 +102,11 @@
       "type": "72-500",
       "msn": "ZZZZ",
       "first_flight": "2006-11",
-      "line_status": "stored",
-      "fate": {
-        "status": "stored"
+      "status": {
+        "state": "stored",
+        "as_of": "2026-08-25"
       },
+      "events": [],
       "identities": [
         {
           "reg": "VT-ZZZ",
@@ -116,7 +129,10 @@
           "ref": "News article"
         }
       ],
-      "confidence": "partial"
+      "confidence": {
+        "identity": "partial",
+        "status": "partial"
+      }
     }
   ]
 }

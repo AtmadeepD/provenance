@@ -16,6 +16,15 @@
       },
       "required": ["primary", "secondary"]
     },
+    "snapshot_fleet_size": {
+      "type": "object",
+      "properties": {
+        "count": { "type": "string" },
+        "as_of": { "type": "string" },
+        "sources": { "type": "array", "items": { "type": "string" } }
+      },
+      "required": ["count", "as_of"]
+    },
     "obituary_md": { "type": "string" },
     "airframes": {
       "type": "array",
@@ -27,28 +36,43 @@
           "type": { "type": "string" },
           "msn": { "type": "string" },
           "first_flight": { "type": ["string", "null"] },
-          "line_status": {
-            "type": "string",
-            "enum": ["active", "stored", "scrapped", "preserved", "written_off", "unknown"]
-          },
-          "fate": {
+          "status": {
             "type": "object",
             "properties": {
-              "status": {
+              "state": {
                 "type": "string",
-                "enum": ["active", "stored", "scrapped", "preserved", "written_off", "unknown"]
+                "enum": ["active", "stored", "withdrawn", "scrapped", "written_off", "preserved", "unknown"]
               },
               "place": {
                 "type": "object",
                 "properties": {
-                  "name": { "type": "string" },
-                  "icao": { "type": "string" }
+                  "name": { "type": "string" }
                 }
               },
-              "date": { "type": ["string", "null"] },
+              "as_of": { "type": "string" },
+              "last_physical_sighting": { "type": "string" },
               "note": { "type": "string" }
             },
-            "required": ["status"]
+            "required": ["state", "as_of"]
+          },
+          "events": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "date": { "type": "string" },
+                "type": {
+                  "type": "string",
+                  "enum": ["delivery", "transfer", "repossession", "returned_to_lessor", "sold", "conversion", "accident", "storage", "return_to_service", "scrapped", "preserved"]
+                },
+                "place": { "type": "string" },
+                "party": { "type": "string" },
+                "flight": { "type": "string" },
+                "outcome": { "type": "string" },
+                "note": { "type": "string" }
+              },
+              "required": ["date", "type"]
+            }
           },
           "identities": {
             "type": "array",
@@ -99,12 +123,22 @@
             }
           },
           "confidence": {
-            "type": "string",
-            "enum": ["verified", "partial", "sketchy"]
+            "type": "object",
+            "properties": {
+              "identity": {
+                "type": "string",
+                "enum": ["verified", "partial", "sketchy"]
+              },
+              "status": {
+                "type": "string",
+                "enum": ["verified", "partial", "sketchy"]
+              }
+            },
+            "required": ["identity", "status"]
           }
         },
         "required": [
-          "airframe_id", "manufacturer", "type", "msn", "line_status", "fate", "identities", "eras", "sources", "confidence"
+          "airframe_id", "manufacturer", "type", "msn", "status", "events", "identities", "eras", "sources", "confidence"
         ]
       }
     }
