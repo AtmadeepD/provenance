@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const desc = Object.entries(fates).map(([k, v]) => `${v} ${k.replace('_', ' ')}`).join(', ');
 
   return {
-    title: `${data.operator.name} — where the fleet went | PROVENANCE`,
+    title: `${data.name} — where the fleet went | PROVENANCE`,
     description: `Fleet diaspora: ${desc}`,
   };
 }
@@ -53,13 +53,13 @@ export default async function DiasporaPage({ params }: { params: Promise<{ slug:
     <>
       <Container className="py-24 space-y-16 flex-1">
         <header className="space-y-6 max-w-[68ch]">
-          <Eyebrow rule>airline · {data.operator.founded}–{data.operator.ceased?.substring(0, 4)}</Eyebrow>
+          <Eyebrow rule>airline · {data.founded}–{data.ceased?.substring(0, 4)}</Eyebrow>
           <h1 className="text-display-xl font-normal font-display">
-            {data.operator.name}
-            <span style={{ color: data.operator.livery?.primary || 'var(--color-ink)' }}>.</span>
+            {data.name}
+            <span style={{ color: data.livery?.primary || 'var(--color-ink)' }}>.</span>
           </h1>
           <div className="text-h3 font-display text-ink-2 space-y-4">
-            <Markdown>{data.operator.obituary_md || ''}</Markdown>
+            <Markdown>{data.obituary_md || ''}</Markdown>
             <p className="text-body font-sans mt-4">
               At its peak the airline ran 64–66 aircraft. By February 2012, 22 of them still flew.
             </p>
@@ -67,11 +67,11 @@ export default async function DiasporaPage({ params }: { params: Promise<{ slug:
         </header>
 
         <section className="space-y-4">
-          <Eyebrow>every airframe {data.operator.name} operated or inherited — {total} identified</Eyebrow>
+          <Eyebrow>every airframe {data.name} operated or inherited — {total} identified</Eyebrow>
           <FateStrip counts={counts} total={total} />
         </section>
 
-        <DiasporaClient airframes={data.airframes} liveryFallback={data.operator.livery?.primary || '#B3202C'} />
+        <DiasporaClient airframes={data.airframes} liveryFallback={data.livery?.primary || '#B3202C'} />
       </Container>
       <SiteFooter date="2026-08-25">
         <div className="space-y-1 max-w-[68ch] break-all">

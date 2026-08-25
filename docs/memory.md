@@ -63,6 +63,14 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.7 — The diaspora page (revised)
+- Created the interactive diaspora list component `DiasporaClient` supporting client-side filtering and sorting.
+- Implemented Section Eyebrows grouping the list into mainline, turboprops, inherited, and widebody based on registration prefixes.
+- Created `FateStrip` component with 7 dynamic segments, mapping colors and scaling widths over 500ms on mount.
+- Built the `/[slug]` page laying out the header, fate strip, dispersal list, and footer citations.
+- Generated `Markdown` helper for lightweight obituary formatting without extra dependencies.
+
+
 ### 2026-08-25 · Session 0.6 — The mini-lifeline
 - Created the static `MiniLifeline` component (240x36 pure SVG, using `d3-scale`).
 - Implemented all fate terminal symbols (active, stored, scrapped, preserved, unknown) and correctly mapped `--fate-writtenoff`.
