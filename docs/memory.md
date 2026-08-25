@@ -63,6 +63,12 @@ This file is allowed to be messy; it is not allowed to be stale.
 
 ## Session log (newest first)
 
+### 2026-08-25 · Session 0.3 — Site Chrome
+- Built `SiteNav` component with sticky behavior, backdrop blur on scroll, and mobile menu toggle.
+- Handled disabled states for unbuilt routes with `aria-disabled` and --ink-3 styling.
+- Built `SiteFooter` component for citations and snapshot date.
+- Added both components to `layout.tsx` to apply globally.
+
 ### 2026-08-25 · Session 0.2 — Design Tokens
 - Set up globals.css with complete design.md §3 tokens (colors, typography scale, radii, shadows).
 - Configured reduced-motion media query and global visible focus rings.

@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AirlineCuratedSchema",
+  "type": "object",
+  "properties": {
+    "operator_id": { "type": "string" },
+    "name": { "type": "string" },
+    "country": { "type": "string" },
+    "founded": { "type": ["integer", "string"] },
+    "ceased": { "type": ["string", "null"] },
+    "livery": {
+      "type": "object",
+      "properties": {
+        "primary": { "type": "string" },
+        "secondary": { "type": "string" }
+      },
+      "required": ["primary", "secondary"]
+    },
+    "obituary_md": { "type": "string" },
+    "airframes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "airframe_id": { "type": "string" },
+          "manufacturer": { "type": "string" },
+          "type": { "type": "string" },
+          "msn": { "type": "string" },
+          "first_flight": { "type": ["string", "null"] },
+          "line_status": {
+            "type": "string",
+            "enum": ["active", "stored", "scrapped", "preserved", "written_off", "unknown"]
+          },
+          "fate": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "type": "string",
+                "enum": ["active", "stored", "scrapped", "preserved", "written_off", "unknown"]
+              },
+              "place": {
+                "type": "object",
+                "properties": {
+                  "name": { "type": "string" },
+                  "icao": { "type": "string" }
+                }
+              },
+              "date": { "type": ["string", "null"] },
+              "note": { "type": "string" }
+            },
+            "required": ["status"]
+          },
+          "identities": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "reg": { "type": "string" },
+                "country": { "type": "string" },
+                "from": { "type": ["string", "null"] },
+                "to": { "type": ["string", "null"] }
+              },
+              "required": ["reg", "country"]
+            }
+          },
+          "eras": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "operator_id": { "type": "string" },
+                "role": { "type": "string" },
+                "from": { "type": ["string", "null"] },
+                "to": { "type": ["string", "null"] }
+              },
+              "required": ["operator_id", "role"]
+            }
+          },
+          "conversions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "kind": { "type": "string", "enum": ["freighter", "vip", "tanker", "test"] },
+                "date": { "type": "string" }
+              },
+              "required": ["kind"]
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "ref": { "type": "string" },
+                "note": { "type": "string" }
+              },
+              "required": ["ref"]
+            }
+          },
+          "confidence": {
+            "type": "string",
+            "enum": ["verified", "partial", "sketchy"]
+          }
+        },
+        "required": [
+          "airframe_id", "manufacturer", "type", "msn", "line_status", "fate", "identities", "eras", "sources", "confidence"
+        ]
+      }
+    }
+  },
+  "required": ["operator_id", "name", "country", "founded", "livery", "obituary_md", "airframes"]
+}
